@@ -228,47 +228,47 @@ body {
   }
 }
 
-/* Experience section */
-.experience {
+/* timeline */
+.timeline-section {
   padding: 2.5rem 0;
 }
-.experience h2 {
+.timeline-section h2 {
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
 }
-.experience-list {
+.timeline-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.experience-item {
+.timeline-item {
   background: #f8f8f8;
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid #eee;
 }
-.experience-item h3 {
+.timeline-item h3 {
   margin: 0 0 0.25rem 0;
   font-size: 1.1rem;
 }
-.experience-meta {
+.timeline-item-meta {
   color: var(--muted);
   font-size: 0.9rem;
   margin: 0 0 0.5rem 0;
 }
-.experience-item p {
+.timeline-item p {
   margin: 0 0 0.5rem 0;
   line-height: 1.5;
 }
 
 /* larger screens: side-by-side cards */
 @media (min-width: 768px) {
-  .experience-list {
+  .timeline-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
   }
-  .experience-item {
+  .timeline-item {
     flex: 1 1 calc(33% - 2rem);
   }
 }
