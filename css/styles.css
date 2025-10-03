@@ -330,6 +330,704 @@ body {
     flex: 1 1 calc(33% - 2rem);
   }
 }
+add a good fancy but cosistent hover effect for the navbar buttons:
+
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Younes Kazemi Moghaddam - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Younes Kazemi Moghaddam - Computer Science student."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Younes Kazemi Moghaddam</a>
+
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-controls="primaryNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+
+        <nav
+          id="primaryNav"
+          class="primary-nav"
+          aria-label="Primary navigation"
+        >
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-text">
+          <h1>Younes Kazemi Moghaddam</h1>
+          <p class="lead">
+            Undergraduate in Computer Science • Junior programmer • Problem
+            solver • Currently learning Linux • Passionate about Network and
+            Cybersecurity
+          </p>
+          <p>
+            <a class="btn" href="assets/cv/cv.pdf" download>Download CV</a>
+            <a class="btn ghost" href="#projects">See projects</a>
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/images/profile.jpg"
+            alt="Portrait of Younes"
+            width="260"
+            height="260"
+          />
+        </div>
+      </section>
+      <!-- About Me Section -->
+      <section id="about" class="about container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm an undergraduate student at Amirkabir University of Technology
+              (Tehran Polytechnic), currently in my fifth term. I have a strong
+              foundation in programming with C and Java, and some experience
+              with C++ and Python. I’m passionate about software development,
+              algorithms, cybersecurity, and Linux. Ranked among the top
+              students in my major, I’m eager to apply my knowledge through
+              internships, projects, or collaborative work. I value
+              collaboration and exchanging ideas with fellow technologists and
+              innovators.
+            </p>
+            <h3>Skills</h3>
+            <ul class="skills-list">
+              <li>Programming: C, C++, Java, Python</li>
+              <li>Algorithms & Problem Solving</li>
+              <li>Linux & Git</li>
+              <li>Cybersecurity & Networking (basics)</li>
+              <li>Design Thinking</li>
+            </ul>
+            <p>
+              <a class="btn" href="assets/cv/cv.pdf" download>Download CV</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Education Section -->
+      <section id="education" class="timeline-section container">
+        <h2>Education</h2>
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <h3>Amirkabir University of Technology – Tehran Polytechnic</h3>
+            <p class="experience-meta">
+              Bachelor of Science, Computer Science | Sep 2023 – Present
+            </p>
+            <p>
+              Pursuing a BS in Computer Science with focus on algorithms,
+              programming, and software design. Engaged in academic projects and
+              teaching assistant roles.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>
+              National Organization for Development of Exceptional Talents
+              (Sampad)
+            </h3>
+            <p class="experience-meta">
+              High School Diploma, Mathematics and Physics | Sep 2020 – Jun 2023
+            </p>
+            <p>
+              Graduated with a GPA of 19.78/20 (≈3.96/4). Developed strong
+              analytical and problem-solving skills through intensive coursework
+              in mathematics and physics.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="timeline-section container">
+        <h2>Experience</h2>
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <h3>
+              Undergraduate Teaching Assistant – Data Structures & Algorithms
+            </h3>
+            <p class="experience-meta">
+              Amirkabir University of Technology | Aug 2025 – Present
+            </p>
+            <p>
+              Assisting Dr. Zahra Ghorbanali with assignments and practice
+              sessions, helping students understand core algorithms and data
+              structures.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>
+              Undergraduate Teaching Assistant – Advanced Programming (Java)
+            </h3>
+            <p class="experience-meta">
+              Amirkabir University of Technology | Aug 2025 – Present
+            </p>
+            <p>
+              Supporting Dr. Rouhollah Ahmadian by guiding students with coding
+              projects, debugging, and object-oriented programming concepts.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>
+              Undergraduate Teaching Assistant – Advanced Programming (Java)
+            </h3>
+            <p class="experience-meta">
+              Amirkabir University of Technology | Jan 2025 – Jun 2025
+            </p>
+            <p>
+              Assisted Professor Mehdi Ghatee and Dr. Behnam Yousefimehr with
+              Java assignments and projects, focusing on clean code and software
+              design.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Design Thinking Participant</h3>
+            <p class="experience-meta">Samsung Solve for Tomorrow | May 2025</p>
+            <p>
+              Took part in a design thinking program, working in a team to
+              analyze real-world problems and develop creative, practical
+              solutions. Gained hands-on experience in brainstorming,
+              prototyping, and teamwork.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Tech Journey Camp</h3>
+            <p class="experience-meta">DotinSchool | May 2025</p>
+            <p>
+              Joined a technology-focused camp exploring different areas of
+              computer science and software development. Learned from industry
+              experts, collaborated with peers, and worked on practical
+              exercises.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Shopping Mall -->
+          <article class="project-card">
+            <img
+              src="assets/images/shopping-mall.png"
+              alt="Shopping Mall App preview"
+              class="project-img"
+            />
+            <h3>Shopping Mall</h3>
+            <p>
+              A Java-based shopping mall management system with separate modules
+              for admins and clients. Admins can manage products and sales,
+              while clients can browse items, add them to a basket, and make
+              purchases. The project uses MySQL for storage and Java Swing for
+              the interface.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ykazemim/shopping-mall"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repo
+              </a>
+            </p>
+          </article>
+
+          <!-- SwingCalculator -->
+          <article class="project-card">
+            <img
+              src="assets/images/swing-calculator.png"
+              alt="Swing Calculator preview"
+              class="project-img"
+            />
+            <h3>SwingCalculator</h3>
+            <p>
+              A lightweight calculator built in Java with Swing. Supports basic
+              arithmetic operations, sign toggling, decimals, and simple editing
+              (clear and backspace). Clean design and easy to use.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ykazemim/SwingCalculator"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repo
+              </a>
+            </p>
+          </article>
+
+          <!-- AI Projects -->
+          <article class="project-card">
+            <img
+              src="assets/images/ai-projects.png"
+              alt="AI Projects preview"
+              class="project-img"
+            />
+            <h3>AI Projects</h3>
+            <p>
+              A collection of AI assignments from my university course, written
+              in Python. Includes pathfinding, adversarial search, constraint
+              satisfaction, genetic algorithms, and a machine learning pipeline.
+              Each project focuses on applying core AI concepts with practical
+              implementations.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ykazemim/ai-course-projects"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repo
+              </a>
+            </p>
+          </article>
+          <!-- Strong Password Generator -->
+          <article class="project-card">
+            <img
+              src="assets/images/strong-pass.png"
+              alt="Strong Password Generator preview"
+              class="project-img"
+            />
+            <h3>Strong Password Generator</h3>
+            <p>
+              A simple C program that generates secure 16-character passwords
+              using letters, numbers, and symbols. It can also copy the password
+              directly to the clipboard on Windows.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ykazemim/strong-pass-generator"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repo
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="contact container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out through any of the following channels:</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:ykazemim04@gmail.com">ykazemim04@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>GitHub</h3>
+            <p>
+              <a
+                href="https://github.com/ykazemim"
+                target="_blank"
+                rel="noopener"
+              >
+                github.com/ykazemim</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/ykazemim"
+                target="_blank"
+                rel="noopener"
+              >
+                linkedin.com/in/ykazemim</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small
+          >© <span id="year"></span> Younes Kazemi Moghaddam |
+          <a href="https://github.com/ykazemim" target="_blank" rel="noopener"
+            >GitHub</a
+          ></small
+        >
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+
+
+style.css:
+/* Mobile-first baseline */
+:root {
+  --max-width: 1100px;
+  --accent: #0b63b7;
+  --muted: #666;
+  --radius: 8px;
+  --container-pad: 1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+/* layout container */
+.container {
+  width: calc(100% - 2 * var(--container-pad));
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--container-pad);
+}
+
+/* header */
+.site-header {
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* nav - mobile first */
+.nav-toggle {
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.nav-toggle .bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #111;
+}
+
+/* hide nav by default on small screens */
+.primary-nav {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: none;
+  min-width: 180px;
+}
+.primary-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.primary-nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+}
+.primary-nav a:hover {
+  background: #f5f7fb;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.25rem 0;
+}
+.hero-text h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+}
+.lead {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+/* hero image */
+.hero-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 4px solid #f3f5f7;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: inherit;
+}
+
+/* footer */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Larger screens: show nav inline */
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .primary-nav {
+    position: static;
+    display: block;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+  }
+  .primary-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .primary-nav a {
+    padding: 0.25rem 0;
+  }
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .hero-image {
+    width: 280px;
+    flex: 0 0 280px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-image img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/* About section */
+.about {
+  padding: 2.5rem 0;
+}
+.about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+}
+.skills-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+.skills-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* larger screen layout */
+@media (min-width: 768px) {
+  .about-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .about-text {
+    flex: 1;
+  }
+}
+
+/* timeline */
+.timeline-section {
+  padding: 2.5rem 0;
+}
+.timeline-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.timeline-item {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #eee;
+}
+.timeline-item h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+.timeline-item-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+.timeline-item p {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* larger screens: side-by-side cards */
+@media (min-width: 768px) {
+  .timeline-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .timeline-item {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+/* Projects section */
+.projects {
+  padding: 2.5rem 0;
+}
+.projects h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+}
+.project-card h3 {
+  margin: 0;
+}
+.project-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+.project-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* larger screens: 3-column layout if space allows */
+@media (min-width: 768px) {
+  .projects-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* always 3 equal columns */
+  }
+  .project-card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
 
 /* Contact section */
 .contact{
@@ -374,4 +1072,52 @@ body {
   .contact-card{
     flex:1;
   }
+}
+
+/* Common card hover effect */
+.project-card,
+.contact-card,
+.timeline-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.contact-card:hover,
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+  border-color: #ddd;
+}
+.project-card:hover .project-img,
+.contact-card:hover img,
+.timeline-item:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Minimalist hover effect for navbar links */
+.primary-nav a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.primary-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* distance of underline from text */
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.primary-nav a:hover::after {
+  width: 100%;
+}
+
+.primary-nav a:hover {
+  color: var(--accent); /* subtle color shift */
 }
